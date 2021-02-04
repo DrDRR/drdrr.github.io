@@ -1,19 +1,11 @@
-<footer class='c-footer'>
-  <div class='o-grid'>
-    <div class='o-grid__col o-grid__col--full'>
-
-      <ul class='o-plain-list c-social-nav u-text-center'>
-        
-        <li class='c-social-nav__item'>
-          <a href='https://t.me/' target='_blank'>
-            <span class='c-social-nav__icon' data-icon='ei-sc-telegram' data-size='s'></span>
-          </a>
-        </li>
-      </ul>
-<p class='o-plain-list c-social-nav u-text-center' style='font-size: small;'>Copyright © Dr. DRR 2021</p>
+<footer id="footer" class="site-footer">
+  <div class="inner">
+    <div class="copyright">
+      {% if site.copyright %}
+        {{ site.copyright | markdownify }}
+      {% else %}
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
+      {% endif %}
     </div>
   </div>
-
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 </footer>

@@ -2,20 +2,14 @@
 layout: default
 ---
 
-<div class='o-wrapper'>
+{% include page-intro.html %}
 
-  <div class='o-grid'>
-    <div class='o-grid__col'>
-      <article class='c-post'>
-        <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
-
-        <div class='c-content'>
-          {% include page-image.html %}
-
-          {{ content }}
-        </div>
-      </article>
-    </div>
+<main id="main" class="page-content" aria-label="Content">
+  <div class="inner">
+    <article class="entry-wrap">
+      <div class="entry-content">
+        {{ content }}
+      </div>
+    </article>
   </div>
-
-</div>
+</main>
