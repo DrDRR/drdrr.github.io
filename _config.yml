@@ -16,16 +16,16 @@
 lang: en-US
 title: Dr. DRR
 email: wentrao@tom.com
-description: This is a description.
+description: Still learning.
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: https://drdrr.xyz #the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author: 
   name: Dan
   twitter:
   picture:
 twitter_username:
 github_username:
-logo: icon_gift.png # path of site logo, e.g. "/assets/images/logo.png"
+logo: /assets/pictures/logo-light.png # path of site logo, e.g. "/assets/images/logo.png"
 search: false # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia

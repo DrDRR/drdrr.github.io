@@ -1,5 +1,5 @@
 ---
-title: Category Archive
+title: 分类
 layout: categories
 permalink: /categories/
 ---
