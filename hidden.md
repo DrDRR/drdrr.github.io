@@ -1,6 +1,5 @@
 ---
-layout: page
-title: 隐藏页面
+layout: default
 ---
 
 盲生，你发现了华点！！
