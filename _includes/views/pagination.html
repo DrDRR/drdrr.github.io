@@ -27,7 +27,7 @@
         <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
       </div>
       <p class="post-excerpt">
-        {{ post.content | strip_html | truncate: 150 | markdownify }}
+        {{ post.content | strip_html | truncate: 100 | markdownify }}
         <p><a href="{{ post.url | relative_url }}" class="more-link">更多<span class="iconmore">{% include icon-arrow-right.svg %}</span></a></p>
       </p>
       <div class="post-tags">
