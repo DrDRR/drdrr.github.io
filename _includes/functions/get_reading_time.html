@@ -5,11 +5,14 @@
 {% if include.params.speed %}
   {% assign speed = include.params.speed %}
 {% else %}
-  {% assign speed = 160 %}
+  {% assign speed = 350 %}
 {% endif %}
 
 {% assign total_mins = article
-  | number_of_words
+  | strip_html 
+  | strip_newlines 
+  | remove: " "
+  | size
   | divided_by: speed
   | at_least: 1 %}
 
