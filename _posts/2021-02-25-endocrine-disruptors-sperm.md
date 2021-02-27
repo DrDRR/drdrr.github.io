@@ -6,7 +6,7 @@ categories:
 tags:
     - 生殖医学
     - 环境污染
-banner: https://s3.ax1x.com/2021/02/25/yvL0iD.png
+banner: https://s3.ax1x.com/2021/02/27/6pEhTK.png
 ---
 
 我们的双腿之间正在发生令人担忧的事情。
