@@ -12,6 +12,10 @@
     {%- include functions.html func='get_reading_time' -%}
     {% assign reading_time = return %}
     <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
+
+    <span id="busuanzi_container_page_pv" class="post-reading-time left-vsplit" style='display:none'><i class="fa fa-book"></i>
+      <span id="busuanzi_value_page_pv"></span>次阅读
+    </span>
   </p>
 
   {%- if page.tags.size > 0 -%}
