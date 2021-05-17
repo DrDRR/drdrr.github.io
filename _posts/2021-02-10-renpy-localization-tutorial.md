@@ -23,7 +23,7 @@ Ren'Py是一个galgame玩家熟悉的引擎，基于Python打造。使用这个�
 
 将Renpy游戏解压缩后，可以看到其基本结构如下：
 
-![ywqFK0.png](https://s3.ax1x.com/2021/02/10/ywqFK0.png)
+![ywqFK0.png](https://i.postimg.cc/8k6kxsPg/image.png)
 
 + `/game`：游戏核心脚本和资源文件
 + `/lib`：Ren'Py运行所需的库
@@ -33,7 +33,7 @@ Ren'Py是一个galgame玩家熟悉的引擎，基于Python打造。使用这个�
 
 打开game文件夹，可以看到里面存放的是一些游戏资源（音乐、字体、图片等）和脚本。我们的翻译文件也会存在这里。其中比较重要的是拓展名为rpa的文件，里面打包了大部分的游戏资源和脚本。一般的游戏只有一个`archive.rpa`，但Limits这个有点特殊，它的脚本单独打包了一个`scripts.rpa`。
 
-![ywqJaD.png](https://s3.ax1x.com/2021/02/10/ywqJaD.png)
+![ywqJaD.png](https://i.postimg.cc/52NV9t10/image.png)
 
 ## 前置工作
 
@@ -165,25 +165,25 @@ screen preferences():
 
 保存后，进入游戏，就可以发现设置中多了语言选项，只不过此时Chinese点不了，因为还没有生成翻译文件。
 
-![ywvWDI.png](https://s3.ax1x.com/2021/02/10/ywvWDI.png)
+![ywvWDI.png](https://i.postimg.cc/yNg2WgGV/image.png)
 
 ### 生成翻译文件
 
 打开Ren'Py sdk，更改工程目录为游戏文件夹所在的文件夹，之后便可在工程目录中找到游戏。
 
-![ywxTdx.png](https://s3.ax1x.com/2021/02/10/ywxTdx.png)
+![ywxTdx.png](https://i.postimg.cc/d3455wfH/image.png)
 
-![ywxqJO.png](https://s3.ax1x.com/2021/02/10/ywxqJO.png)
+![ywxqJO.png](https://i.postimg.cc/DwtBjCCT/image.png)
 
 点选目标游戏后，点击右下角的生成翻译文件。语言输入chinese，然后点击生成。注意，最好不要选择生成空字符串，不然未翻译的字符串全会显示成空白。
 
-![ywzPFf.png](https://s3.ax1x.com/2021/02/10/ywzPFf.png)
+![ywzPFf.png](https://i.postimg.cc/VsD4Qs74/image.png)
 
 等待完成后，所有的翻译文件就存放在了`game/tl/chinese`文件夹中。其中，rpy格式的可用任何一种编辑器打开，rpyc是对应的二进制文件，不用管。
 
 此时再进游戏，Chinese选项就可以点击了，但是由于还没有翻译，显示出来的还是和原来一样的英文（如果你之前选择了生成空字符串，切换语言后就会发现全是空白！！）
 
-![ywz3pF.png](https://s3.ax1x.com/2021/02/10/ywz3pF.png)
+![ywz3pF.png](https://i.postimg.cc/CKGHvwBG/image.png)
 
 ## 进行翻译
 
@@ -231,7 +231,7 @@ translate chinese strings:
 
 打开游戏看看，嗯？怎么这一句变成了方块呢？
 
-![y0SOrd.png](https://s3.ax1x.com/2021/02/10/y0SOrd.png)
+![y0SOrd.png](https://i.postimg.cc/xdnb1M8m/image.png)
 
 原因很简单，就是游戏默认的字体不支持中文字符，所以显示不出来。为此，我们还需要更改游戏字体。
 
@@ -247,7 +247,7 @@ define gui.interface_text_font = 'OPPOSans-M-2.ttf' #菜单等用的字体
 
 然后再打开游戏，就发现中文可以正常显示了。
 
-![y09QtP.png](https://s3.ax1x.com/2021/02/10/y09QtP.png)
+![y09QtP.png](https://i.postimg.cc/jqw4WVt4/image.png)
 
 ### 进行翻译
 
@@ -290,7 +290,7 @@ nar "You're a good [gender_noun!t]."  #在Ren'Py对话中引用时，用方括�
 
 如某游戏有背包界面，界面上的某些字符串是无法正常翻译的：
 
-![y0iHuF.png](https://s3.ax1x.com/2021/02/10/y0iHuF.png)
+![y0iHuF.png](https://i.postimg.cc/CxmqPJwK/image.png)
 
 这时，我们需要在源代码中找到这一段，让其支持多语言。同样是在字符串两边加上`_()`：
 
